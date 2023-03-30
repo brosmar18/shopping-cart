@@ -13,7 +13,12 @@ const Cart = function(items) {
 };
 
 Cart.prototype.addItem = function(product, quantity) {
+  console.log('working');
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
+let newCartItem = document.getElementById('items').value;
+console.log('🚀 ~ file: app.js:19 ~ newCartItem:', newCartItem);
+let newCartItemQuantity = document.getElementById('quantity').value;
+console.log('🚀 ~ file: app.js:22 ~ newCartItemQuantity:', newCartItemQuantity);
 };
 
 Cart.prototype.saveToLocalStorage = function() {
