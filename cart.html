@@ -9,12 +9,12 @@
 
 <body>
 
-  <header>
-    <h1>Odd Duck Products Online Store</h1>
-    <nav>
+  <header class="header">
+    <h1 class="header__title">Odd Duck Products Online Store</h1>
+    <nav class="nav__links">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
+        <li class="nav__link"><a href="index.html">Home</a></li>
+        <li class="nav__link"><a href="cart.html">Cart</a><span id="itemCount"></span></li>
       </ul>
     </nav>
   </header>
@@ -22,20 +22,20 @@
   <main>
 
     <section class="deck col-1">
-      <div class="card">
+      <div class="deck__card">
         <header>
-          <h1>Your Cart</h1>
+          <h2 class="deck__title">Your Cart</h2>
         </header>
         <div class="copy">
-          <ol>
-            <li>Click the "X" next to any item to remove it from your cart</li>
+          <ol class="copy__list">
+            <li class="copy__link-item">Click the "X" next to any item to remove it from your cart</li>
           </ol>
         </div>
       </div>
     </section>
 
-    <section class="deck col-1">
-      <div id="cart-container" class="card">
+    <section class="deck2 col-1">
+      <div id="cart-container" class="deck2__card2">
         <table id="cart">
           <thead>
             <tr>
