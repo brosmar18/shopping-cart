@@ -8,49 +8,49 @@
 </head>
 
 <body>
-
-  <header>
-    <h1>Odd Duck Products Online Store</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
+<div class="page">
+  <header class="header">
+    <h1 class="header__title">Odd Duck Products Online Store</h1>
+    <nav class="nav">
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="cart.html">Cart</a><span id="itemCount"></span></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main">
 
     <section class="deck col-1">
-      <div class="card">
+      <div class="deck__card">
         <header>
-          <h1>Shop Our Catalog</h1>
+          <h2 class="deck__title">Shop Our Catalog</h2>
         </header>
         <div class="copy">
-          <ol>
-            <li>Select an item from our catalog and indicate how many you would like to purchase.</li>
-            <li>Once you've made your selection, click the "Add to Cart" button</li>
-            <li>When you are ready to purchase, click the "Cart" link above to view your cart and check out</li>
+          <ol class="copy__list">
+            <li class="copy__list-item">Select an item from our catalog and indicate how many you would like to purchase.</li>
+            <li class="copy__list-item">Once you've made your selection, click the "Add to Cart" button</li>
+            <li class="copy__list-item">When you are ready to purchase, click the "Cart" link above to view your cart and check out</li>
           </ol>
         </div>
       </div>
     </section>
 
-    <section class="deck col-2">
-      <div class="card">
-        <div class="copy">
-          <form id="catalog">
-            <fieldset>
-              <legend>Catalog</legend>
+    <section class="deck2 col-2">
+      <div class="deck2__card2">
+        <div class="copy2">
+          <form class="form" id="catalog">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Catalog</legend>
               <label>
-                <span>Item</span>
-                <select id="items"></select>
+                <span class="form__span">Item</span>
+                <select class="items" id="items"></select>
               </label>
               <label>
-                <span>Quantity</span>
-                <input id="quantity" type="number" />
+                <span class="form__quantify">Quantity</span>
+                <input class="form__input" id="quantity" type="number" />
               </label>
-              <input type="submit" value="Add To Cart" />
+              <input class="form__input" type="submit" value="Add To Cart" />
             </fieldset>
           </form>
         </div>
@@ -60,12 +60,13 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy;2018 Code Fellows 201d33</p>
   </footer>
 
   <script src='js/app.js'></script>
   <script src='js/catalog.js'></script>
+  </div>
 </body>
 
 </html>
