@@ -22,6 +22,16 @@ console.log('🚀 ~ file: app.js:22 ~ newCartItemQuantity:', newCartItemQuantity
 };
 
 Cart.prototype.saveToLocalStorage = function() {
+  let saveItemString = localStorage.getItem('saveItem');
+  console.log('local storage' ,saveItemString);
+  let arrayOfNotItems = JSON.parse(saveItemString);
+  for(let j = 0; j < arrayOfNotItems.length; j++) {
+    new Product(
+      this.name = arrayOfNotItems[j].name,
+      this.items = arrayOfNotItems[j].items,
+      this.quantity = arrayOfNotItems[j].quantity,
+    );
+  } 
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
 };
 
@@ -67,6 +77,7 @@ function generateCatalog() {
   let wineGlass = new Product('assets/wine-glass.jpg', 'Wine Glass');
   state.allProducts.push(bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulu, dogDuck, dragon, pen, petSweep, scissors, shark, sweep, tauntaun, unicorn, waterCan, wineGlass);
 }
+
 
 // Initialize the app by creating the big list of products with images and names
 generateCatalog();
